@@ -93,6 +93,7 @@ export default function AdminDashboard() {
     closeAuthModal();
     if (authMode === "login") {
       showNotification("Login successful!", "success");
+      navigate("/");
     } else {
       showNotification("Sign up successful! Registration completed.", "success");
     }

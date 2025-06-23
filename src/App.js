@@ -4,6 +4,7 @@ import IPOList from './components/IPOList';
 import IPODetail from './components/IPODetail';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AdminDashboard, { SIPCalculator, SWPCalculator, BrokerageCalculator, MarginCalculator } from './components/AdminDashboard';
+import About from './pages/About';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path="/" element={<IPOList />} />
           <Route path="/ipo/:id" element={<IPODetail />} />
           <Route path="/admin" element={<AdminDashboard />} />
+          <Route path="/about" element={<About />} />
           <Route path="/calculator/sip" element={<SIPCalculator />} />
           <Route path="/calculator/swp" element={<SWPCalculator />} />
           <Route path="/calculator/brokerage" element={<BrokerageCalculator />} />
